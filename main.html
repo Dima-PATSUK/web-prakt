@@ -1,25 +1,108 @@
 <!DOCTYPE html>
-<html lang="en",lang="ru">
+<html lang="en" lang="ru">
 
-<head>
+<head src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min">
     <title>CFMOTO.RU</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/norm/normaliz.css">
     <link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" href="main.js">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 
 
 <body>
+
+
+    <div class="tpl_hamburger" id="sandwichmenu">
+        <svg viewBox="0 0 800 600">
+            <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
+            <path d="M300,320 L540,320" class="middle"></path>
+            <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+        </svg>
+    </div>
+<div class="js_menu">
+menu there
+</div>      
+         
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            
+<div class="fof1">Оставить заявку</div>
+<div class="pop">
+    <div class="page">
+        <form class="js-form" action="" novalidate >
+    <div class="form__group">
+        <input type="text" class="f2 input js-input" name="name" placeholder="Как к Вам обращаться?"  >
+    </div>
+</div>
+<form class="js-form" action="" novalidate >
+    <div class="form__group">
+        <input type="text" class="f2 input js-input" name="name" placeholder="Телефон или WhatsApp"  >
+    </div>
+</div>
+
+
+<button class="fb" type="submit">
+    Submit form
+</button>
+
+        <a class="fofe" href="javascript:PopUpHide()">&#10006</a>
+        </div>
+    </div>
+
+        <script src="main.js"> </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <div class="bro">
+
+    <a href="#" class="scrollup">Наверх</a>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+
+
     <header>
         <div class="menu">
+
             <a href="https://www.w3docs.com">
-            <img class="logo" src="jpg/logop.svg">
+            <img class="logo" src="jpg/logop.svg" alt="типо так">
         </a>
             <div class="nav">
                 <a class="text"  href="#P">МАРШРУТЫ</a>
@@ -28,15 +111,39 @@
                 <a class="text"  href="#P">КОНТАКТЫ</a>
                 <a class="text"  href="#P">ЗАБРОНИРОВАТЬ</a>
             </div>
-            <img class="tel" src="jpg/tel.svg">
+            <img class="tel" src="jpg/tel.svg" alt="типо так">
             <div class="nomer">
                 +7 928 333 26 45
             </div>
+
+
             <div>
-                <button class="btn"  type="submit">Перезвоните мне</button>
+                <button class="btn" onclick="PopUpShow()"  type="submit">Перезвоните мне</button>
             </div>
-        </div>
-        <img class="bg1" src="jpg/bg1.jpg">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="timer"></div>
+    <div class="slideshow">
+      <div class="slide" alt="типо так">01</div>
+      <div class="slide" alt="типо так">02</div>
+      <div class="slide" alt="типо так">03</div>
+      <div class="slide" alt="типо так">04</div>
+    </div>
+  </div>
+
+
+
+
+
         <h1>Экскурсии на квадроциклах в Геленджике</h1>
         <div class="text2">приезжайте за новыми ощущениями и эмоциями!</div>
         <form>
@@ -46,44 +153,41 @@
     </header>
 </div>
 
-<mein>
+<mein>   
 <div class="status">
-    <div class="statusD1"><img src="/jpg/krug1.svg"></div>
-    <div class="statusD"><img src="/jpg/der.svg"></div>
+    <div class="statusD1"><img src="/jpg/krug1.svg" alt="типо так"></div>
+    <div class="statusD"><img src="/jpg/der.svg" alt="типо так"></div>
     <div class="textD">Увлекательные экскурсии</div>
     <div class="textD1">Маршруты от лесных дорожек до полного бездорожья!</div>
-    <div class="moto1"><img src="/jpg/krug1.svg"></div>
-    <div class="moto"><img src="/jpg/moto.svg"></div>
+    <div class="moto1"><img src="/jpg/krug1.svg" alt="типо так"></div>
+    <div class="moto"><img src="/jpg/moto.svg" alt="типо так"></div>
     <div class="textM">Надежная техника</div>
     <div class="textM1">18 квадроциклов всех японских брендов</div>
-    <div class="hlem1"><img src="/jpg/krug1.svg"></div>
-    <div class="hlem"><img src="/jpg/hlem.svg"></div>
+    <div class="hlem1"><img src="/jpg/krug1.svg" alt="типо так"></div>
+    <div class="hlem"><img src="/jpg/hlem.svg" alt="типо так"></div>
     <div class="textH">Экипировка бесплатно</div>
     <div class="textH1">Необходимая экипировка выдается бесплатно</div>
-    <div class="gel1"><img src="/jpg/krug1.svg"></div>
-    <div class="gel"><img src="/jpg/gel.png"></div>
+    <div class="gel1"><img src="/jpg/krug1.svg" alt="типо так"></div>
+    <div class="gel"><img src="/jpg/gel.png" alt="типо так"></div>
     <div class="textG">Опытные инструктора</div>
     <div class="textG1">Обеспечат полную безопасность Вашего отдыха</div>
 </div>
 
-
-
-
-
 <!-- sadaSssssssssssssssssssssssssssssssssssssssssassssssssssD -->
 <div class="HATH">
     <div class="ha">Наши маршруты</div>
-<img class="dbd" src="/jpg/GOR.svg">
+<img class="dbd" src="/jpg/GOR.svg" alt="типо так">
+<div class="hhtor">
     <div class="topT">БАЗОВЫЙ</div>
-    <div class="topT1">ОТ 4000 <img src="/jpg/p.svg"></div>
-    <img class ="topTM1" src="/jpg/t.svg">
+    <div class="topT1">ОТ 4000 <img src="/jpg/p.svg" alt="типо так"></div>
+    <img class ="topTM1" src="/jpg/t.svg" alt="типо так">
     <div class="topTM"> Время в пути: 1,5 - 2 часа</div>
-    <img class="topTT1" src="/jpg/M.svg">
+    <img class="topTT1" src="/jpg/M.svg" alt="типо так">
     <div class="topTT">Расстояние: 20 - 25 км</div>
-    <img class="topHE1" src="/jpg/THE.svg">
+    <img class="topHE1" src="/jpg/THE.svg" alt="типо так">
     <div class="topHE">Сложность: 5***</div>
-    <img class="put2" src="/jpg/met.svg">
-    <img class="put11" src="/jpg/put.svg">
+    <img class="put2" src="/jpg/met.svg" alt="типо так">
+    <img class="put11" src="/jpg/put.svg" alt="типо так">
     <div class="put">маршрут </div>
     <div class="texter">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - -Форсаж</div>
     <form>
@@ -91,14 +195,20 @@
     <button class="bt3" formaction="https://www.w3docs.com" type="submit">Подробнее</button>
     </form>
 </div>
+<div>
+
+
+    
+</div>
+
+<div class="gider">
+
+</div>
+</div>
 <!-- fdddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
 
-
-
-
-
 <div class="MAH">
-    <img class="gor1" src="/jpg/GOR.svg">
+    <img class="gor1" src="/jpg/GOR.svg" alt="типо так">
     <div class="textMAH">Затрудняетесь выбрать маршрут?</div>
     <div class="textMAH1">Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию</div>
     <form>
@@ -107,37 +217,32 @@
 </div>
 
 
-
-
-
-
 <div class="SKROL">
     <div class="vidius">
-        <iframe width="1078" height="430" src="https://www.youtube.com/embed/bJjUjFNaqL0"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1064" height="415" src="https://www.youtube.com/embed/bJjUjFNaqL0"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-
 
 <div class="KOMANDA">
     <div class="textKOM">Наша команда</div>
     <div class="gelus">
         <div class="gelth">
-            <img class="img112" src="/jpg/girl.svg">
+            <img class="img112" src="/jpg/girl.svg" alt="типо так">
             <div class="text112">Юлиана</div>
             <div class="text1112">руководитель</div>
         </div>
         <div class="gelth">
-            <img class="img112" src="/jpg/men.svg">
+            <img class="img112" src="/jpg/men.svg" alt="типо так">
             <div class="text112">Максим</div>
             <div class="text1112">старший инструктор</div>
         </div>
         <div class="gelth">
-            <img class="img112" src="/jpg/girl1.svg">
+            <img class="img112" src="/jpg/girl1.svg" alt="типо так">
             <div class="text112">Кристина</div>
             <div class="text1112">администратор</div>
         </div>
         <div class="gelth">
-            <img class="img112" src="/jpg/men1.svg">
+            <img class="img112" src="/jpg/men1.svg" alt="типо так">
             <div class="text112">Юрий</div>
             <div class="text1112">старший механик</div>
         </div>
@@ -155,37 +260,25 @@
         <div class="text113">Скидка 10%</div>
         <div class="text1114">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</div>
         <form>
-        <button class="btn3" formaction="https://www.w3docs.com" type="submit">подробнее</button>
+        <button class="btnr3" formaction="https://www.w3docs.com" type="submit">подробнее</button>
         </form>
     </div>
     </div>
 </div>
 
-<!-- фффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффsdasdasd -->
 
 <div class="VOPROSU">
     <div class="texttap1">Вопросы-ответы</div>
     
-
-
- 
-
-
-
-
-
-
-
-    
     <div class="voproser">
-        <img class="muisl" src="/jpg/muisl.svg">
+        <img class="muisl" src="/jpg/muisl.svg" alt="типо так">
         <div class="textmuis">ЕСТЬ ВОПРОСЫ?</div>
         <div class="textmuis1">Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы, предложения или идеи для сотрудничества</div>
         <form>
             <button formaction="https://www.w3docs.com" type="submit" class="buttonmuis">Задать вопрос</button>
         </form>
     </div>
-
+    
 <div class="www">
     <button class="collapsible">Актуальный вопрос?</button>
     <div class="content">
@@ -224,56 +317,48 @@
 </div>
 
 
-
-
-
-
-
-
-
-
 </div>
 
-<!-- ыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы -->
 </mein>
 
 
 <footer class="footer">
-    
-    <img class="mesta" src="/jpg/mesta.svg">
-    <img class="palka" src="/jpg/palka.svg">
+    <img class="palka" src="/jpg/palka.svg" alt="типо так">
     <div class="kontent">Контакты</div>
     <div class="metku">
         <div>
             <div class="text115">Город Геленджик</div>
-            <img class="dom" src="/jpg/dom.svg">
-            <img class="krop" src="/jpg/krug1.svg">
+            <img class="dom" src="/jpg/dom.svg" alt="типо так">
+            <img class="krop" src="/jpg/krug1.svg" alt="типо так">
         </div>
         <div>
             <div class="text115">+7 928 428-00-62</div>
-            <img class="dom" src="/jpg/telefon.svg">
-            <img class="krop" src="/jpg/krug1.svg"> 
+            <img class="dom" src="/jpg/telefon.svg" alt="типо так">
+            <img class="krop" src="/jpg/krug1.svg" alt="типо так"> 
         </div>
         <div>
             <div class="text115">experience@groupgrand.ru</div>
-            <img class="dom" src="/jpg/ml.svg">
-            <img class="krop" src="/jpg/krug1.svg"> 
+            <img class="dom" src="/jpg/ml.svg" alt="типо так">
+            <img class="krop" src="/jpg/krug1.svg"alt="типо так"> 
         </div>
         <div>
             <div class="text115">Пн - Пт: 9:00 - 18:00 Сб: 9:00 - 17:00 Вс - выходной</div>
-            <img class="dom1" src="/jpg/tiker.svg">
-            <img class="krop" src="/jpg/krug1.svg">            
+            <img class="dom1" src="/jpg/tiker.svg"alt="типо так">
+            <img class="krop" src="/jpg/krug1.svg"alt="типо так">            
         </div>
         <div class="hamere">Написать нам:</div>
         <a href="https://www.w3docs.com">
-        <img class="vib" src="/jpg/vib.svg">
-        <img class="ins" src="/jpg/ins.svg">
+        <img class="vib" src="/jpg/vib.svg" alt="типо так">
+        <img class="ins" src="/jpg/ins.svg" alt="типо так">
+
+
+
 
         <a href="https://www.w3docs.com">
-            <img class="logo2" src="/jpg/logop.svg">
+            <img class="logo2" src="/jpg/logop.svg" alt="типо так">
             </a>
     </div>
-        <img class="palka1" src="/jpg/palka1.svg">
+        <img class="palka1" src="/jpg/palka1.svg" alt="типо так">
         <div class="fof">
             <a href="https://www.w3docs.com" class="tex">МАРШРУТ</a>
             <a href="https://www.w3docs.com" class="tex">ГАЛЕРЕЯ</a>
@@ -282,12 +367,16 @@
             <a href="https://www.w3docs.com" class="tex">УСЛОВИЯ</a>
             <a href="https://www.w3docs.com" class="tex">СПЕЦПРЕДЛОЖЕНИЯ</a>
         </div>
-        <img class="palka2" src="/jpg/palka1.svg">
+        <img class="palka2" src="/jpg/palka1.svg" alt="типо так">
         <div class="lol"> © CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</div>
+    
 </footer>
 
 
-
+<div class="map">
+    <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d1173faffd70a702e5eb5f59b9c83ac6e87122d7c42742148618c8642911f1c&amp;left: 737px;&amp;width=707&amp;height=480&amp;lang=ru_RU&amp;scroll=true">
+    </script>
+</div>
 
 </body>
 </html>
